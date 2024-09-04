@@ -1,0 +1,205 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	line-height: 1.4;
+	color: #000;
+	overflow-x: hidden;
+	height: auto;
+	position: relative;
+}
+.back{
+	background-color: #000000;
+	height: 80px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.back .container{
+	height: inherit;
+	align-items: center;
+}
+.wrapper{
+	display: grid;
+	height: inherit;
+	align-items: center;
+	grid-template-columns: repeat(3, 1fr);
+}
+.ulcenter{
+	justify-self: center;
+}
+.buttonend{
+	justify-self: end;
+}
+.ulcenter ul{
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.ulcenter ul li{
+	display: inline-block;
+	padding: 15px;
+}
+.ulcenter ul li a{
+	font-size: 14px;
+	display: inline-block;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.buttoncolornav{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 14px;
+}
+.buttoncolornav:hover{
+	color: white;
+	padding: 10px;
+	font-size: 14px;
+}
+.whitebuttonnav{
+	color: black;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 15px 25px;
+	border-radius: 2px;
+	background-color: white;
+}
+.burger{
+	display: none;
+}
+.swipe{
+	display: none;
+}
+.back1{
+	background-image: url(laptop.jpg);
+	height: 800px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 1440px;
+	padding-top: 100px;
+	margin: 0 auto;
+	color: white;
+	background-position: center;
+}
+.mainbuttons{
+	margin-top: 100px;
+	font-size: 18px;
+	opacity: 0.8;
+	margin-right: 50px;
+}
+.wrapper1 h1{
+	font-size: 72px;
+}
+.wrapper1 p{
+	font-size: 22px;
+	margin-bottom: 50px;
+}
+.wrapper1 .mainbutton{
+	font-size: 14px;
+	background-color: white;
+	padding: 17px 35px;
+	border-radius: 2px;
+	color: black;
+}
+.back1 a{
+	color: white;
+	text-decoration: none;
+}
+
+@media (max-width: 1200px){
+	.whitebuttonnav{
+		color: black;
+		font-size: 14px;
+		text-decoration: none;
+		padding: 15px 25px;
+		background-color: white;
+	}
+	.ulcenter ul li{
+		display: inline-block;
+		padding: 10px;
+	}
+}
+@media (max-width: 1000px){
+	.ulcenter{
+		display: none;
+	}
+	.buttonend{
+		display: none;
+	}
+	.burger{
+		display: block;
+		background-color: transparent;
+		border: none;
+		justify-self: end;
+		color: white;
+	}
+	.wrapper{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.burger:hover{
+		color: ghostwhite;
+		cursor: pointer;
+	}
+	.burger ion-icon{
+		width: 35px;
+		height: 35px;
+	}
+	.swipe{
+		display: block;
+		background-color: white;
+		position: fixed;
+		bottom: 0;
+		top: 0;
+		padding: 50px;
+		background-color: black;		
+		transition: 0.5s;
+		opacity: 0;
+		z-index: 1;
+		height: auto;
+		right: 0;
+		width: 100%;
+		visibility: hidden;
+		max-width: 100%;
+	}
+	.show{
+		visibility: visible;
+		opacity: 1;
+		right: 0;
+	}
+	.swipeclose{
+		border: 0;
+		color: white;
+		padding: 3%;
+		background-color: transparent;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	.swipe p{
+		text-align: center;
+		line-height: 70px;
+	}
+	.swipe p a{
+		color: white;
+		text-decoration: none;
+		font-size: 30px;
+	}
+	.swipeclose ion-icon{
+		width: 45px;
+		opacity: 0.7;
+		height: 45px;
+	}
+	.swipe .swipebutton{
+		color: black;
+		font-size: 25px;
+		text-decoration: none;
+		background-color: white;
+		padding: 15px 35px;
+		font-weight: 600;
+	}
+}
+@media (max-width: 768px){
+	
+}
+@media (max-width: 480px){
+	
+}
